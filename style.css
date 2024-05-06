@@ -1,0 +1,139 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+:root{
+   --main-clr: #4169e1;
+}
+html{
+   font-family: Sans-Serif;
+}
+.countainer {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   padding: 20px;
+}
+.countainer form{
+  background-color: #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  font-size: 20px;
+  gap: 10px;
+  justify-content: space-between;
+}
+.countainer form .taskinput {
+   padding: 10px;
+   border-radius: 5px;
+   border: none;
+   flex-grow: 1;
+   outline: none;
+}
+.countainer form .taskinput:focus {
+   outline: 1px solid var(--main-clr);
+}
+
+.countainer form .add {
+   padding: 10px;
+   border-radius: 5px;
+   border: none;
+   background-color: var(--main-clr);
+   color: #fff;
+   font-weight: 700;
+}
+.countainer .tasks{
+   background-color: #ccc;
+   border-radius: 10px;
+   padding: 5px;
+   min-height: 50px;
+   max-height: max-content;
+   display: flex;
+   flex-direction: column;
+   
+}
+.countainer .tasks > div{
+   padding: 10px ;
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+   margin-left: 10px;
+}
+.countainer .tasks > div:not(:last-child){
+   border-bottom: 1px solid #aaa8;
+}
+.countainer .tasks > div::before{
+   content: "";
+   position: absolute;
+   left: -5px;
+   padding: 3px;
+   border-radius: 50%;
+   background-color: var(--main-clr);
+}
+.countainer .tasks > div > div {
+   color: #fff;
+   border-radius: 5px;
+   display: flex;
+   gap: 5px ;
+}
+.countainer .tasks > div span{
+   padding: 5px ;
+   background-color: #e14524;
+   font-size: 12px;
+   color: #fff;
+   border-radius: 5px;;
+}
+.countainer .tasks > div span.done{
+   padding: 5px ;
+   background: var(--main-clr);
+   font-size: 12px;
+   color: #fff;
+   border-radius: 5px;;
+}
+.countainer .donelist{
+   background-color: #ccc;
+   border-radius: 10px;
+   padding: 5px;
+   min-height: 50px;
+   max-height: max-content;
+   display: flex;
+   flex-direction: column;
+   
+}
+.countainer .donelist > div{
+   padding: 10px 10px 10px 20px;
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+}
+.countainer .donelist > div:not(:last-child){
+   border-bottom: 1px solid #aaa8;
+}
+.countainer .donelist > div::before{
+   content: "\f058";
+   position: absolute;
+   font-weight: 400;
+   font-family: 'Font Awesome 5 free';
+   left: -5px;
+   padding: 3px;
+   border-radius: 50%;
+   color: var(--main-clr);
+}
+.countainer .donelist > div > div {
+   color: #fff;
+   border-radius: 5px;
+   display: flex;
+   gap: 5px ;
+}
+.countainer .donelist > div span{
+   padding: 5px ;
+   background-color: #e14524;
+   font-size: 12px;
+   color: #fff;
+   border-radius: 5px;;
+}
